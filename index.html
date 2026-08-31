@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa Electronics Inc - Audio Visual Integration Solutions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            background: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Logo Header */
+        .logo-header {
+            padding: 25px 40px;
+            text-align: center;
+            border-bottom: 1px solid #333;
+            background: #1a1a1a;
+        }
+
+        .logo {
+            height: 90px;
+            width: auto;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 120px 40px;
+            text-align: center;
+            background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            color: #1a1a1a;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        /* Content Section */
+        .content-section {
+            padding: 100px 40px;
+        }
+
+        .section-heading {
+            font-size: 36px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: #f9f9f9;
+            border: 1px solid #e8e8e8;
+            border-radius: 8px;
+            padding: 50px 40px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            border-color: #0066cc;
+            background: #fff;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0, 102, 204, 0.08);
+        }
+
+        .card h3 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 16px;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background: #0066cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #0052a3;
+            box-shadow: 0 8px 24px rgba(0, 102, 204, 0.2);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #0066cc;
+            border: 2px solid #0066cc;
+        }
+
+        .btn-outline:hover {
+            background: #0066cc;
+            color: white;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 100px 40px;
+            background: #f9f9f9;
+            border-top: 1px solid #f0f0f0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 24px;
+        }
+
+        .about-content p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 60px 40px;
+            background: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            border-top: 1px solid #333;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .contact-info p {
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        .contact-info strong {
+            color: #fff;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .contact-info a {
+            color: #0066cc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #fff;
+        }
+
+        footer p {
+            color: #aaa;
+            font-size: 13px;
+            margin-top: 30px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 80px 20px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .container {
+                padding: 0 20px;
+            }
+
+            .content-section {
+                padding: 60px 20px;
+            }
+
+            .section-heading {
+                font-size: 28px;
+                margin-bottom: 40px;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .card {
+                padding: 30px 20px;
+            }
+
+            .about-section {
+                padding: 60px 20px;
+            }
+
+            .contact-info {
+                gap: 20px;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo Header -->
+    <div class="logo-header">
+        <img src="https://img1.wsimg.com/isteam/ip/3027ae4e-cb1c-49e6-90c7-40de8caf193a/Mesa%20Logo%20white%202013.png" alt="Mesa Electronics" class="logo">
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Turnkey Audio Visual Integration & Technology Solutions</h1>
+        <p>40+ years of proven expertise delivering comprehensive solutions from consultation through installation and ongoing support</p>
+        <div class="cta-group">
+            <a href="https://www.youtube.com/watch?v=zsQCEcIIXfo" class="btn">Watch Demo</a>
+            <a href="#" class="btn btn-outline">Download Profile</a>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-heading" id="resources">Resources</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>📄 Vendor Profile</h3>
+                    <p>Complete specifications, capabilities, and service offerings. Comprehensive overview of our solutions and expertise.</p>
+                    <a href="#" class="btn">Download PDF</a>
+                </div>
+
+                <div class="card">
+                    <h3>🌐 Learn More</h3>
+                    <p>Explore our full range of audio visual integration services and discover how we partner with leading organizations.</p>
+                    <a href="https://mesaelectronics.com" class="btn">Visit Website</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-content">
+            <h2>Why Choose Mesa Electronics</h2>
+            <p>For over 40 years, Mesa Electronics has been a trusted partner in delivering turnkey audio visual integration and technology solutions. We work closely with our clients to understand their unique needs and provide comprehensive expertise from initial consultation through design, installation, and ongoing support. Our dedicated team is fully equipped to support projects of any scale—from single installations to nationwide deployments.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <h3 style="font-size: 24px; margin-bottom: 20px;">Get in Touch</h3>
+            <div class="contact-info">
+                <p><strong>Email</strong> <a href="mailto:info@mesaelectronicsinc.com">info@mesaelectronicsinc.com</a></p>
+                <p><strong>Phone</strong> <a href="tel:+16306139938">(630) 613-9938</a></p>
+                <p><strong>Hours</strong> M–F, 7:30 AM–4:00 PM</p>
+            </div>
+            <p>&copy; 2026 Mesa Electronics Inc. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
